@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/window_01">
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+         android:layout_marginTop="300dp"
+         android:onClick="button1"
+         android:text="@string/place_to_place"
+         android:textStyle="bold" />
+
+    
+     <Button
+         android:id="@+id/button2"
+          android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/button1"
+         android:onClick="button2"
+         android:text="@string/route_number"
+         android:textStyle="bold" />
+     
+      <Button
+         android:id="@+id/button3"
+          android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/button2"
+         android:onClick="button3"
+         android:text="@string/set_notify"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/button4"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button3"
+         android:layout_centerHorizontal="true"
+         android:onClick="button4"
+         android:text="@string/add_data"
+         android:textStyle="bold" />
+
+</RelativeLayout>
+<!-- From: file:/F:/Bus%20Route%20Finder/app/src/main/res/layout/window_01.xml -->

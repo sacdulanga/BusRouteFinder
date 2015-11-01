@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_02"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editFrom"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dip"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/from" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTo"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dip"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/to" />
+
+   
+
+        
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+             android:textStyle="bold"
+            android:onClick="findroute"
+            android:text="@string/route" />
+        
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+             android:textStyle="bold"
+            android:onClick="findAllPosibleRoutes"
+            android:text="@string/AllResult" />
+
+        <Button
+             android:id="@+id/button3"
+            android:layout_marginTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="showDialog"
+            android:text="@string/cancel" />
+
+</LinearLayout><!-- From: file:/F:/Bus%20Route%20Finder/app/src/main/res/layout/place_to_place_window.xml -->

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_02" 
+    >
+
+    <TextView
+        android:id="@+id/PName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="Place" />
+
+
+    <EditText
+        android:id="@+id/placeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/PName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/placeValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="Location" />
+
+    <EditText
+        android:id="@+id/locationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/cameOverRoutes"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/locationValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="CameOverRoutes" />
+    
+     <EditText
+         android:id="@+id/cameOverRoutesValue"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:layout_below="@+id/cameOverRoutes"
+         android:inputType="text" />
+
+    <Button
+        android:id="@+id/addPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignRight="@+id/cameOverRoutesValue"
+        android:layout_below="@+id/cameOverRoutesValue"
+		android:layout_alignLeft="@+id/cameOverRoutesValue"
+        android:onClick="addPlace"
+         android:textStyle="bold"
+        android:text="Add Place" />
+    
+      <TextView
+        android:id="@+id/changeOverPlace"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addPlace"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="Change Over Place" />
+
+    <EditText
+        android:id="@+id/changeOverPlaceNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/changeOverPlace"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+   <Button
+        android:id="@+id/addChangeOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignRight="@+id/changeOverPlaceNameValue"
+        android:layout_below="@+id/changeOverPlaceNameValue"
+		android:layout_alignLeft="@+id/changeOverPlaceNameValue"
+        android:onClick="addChangeOver"
+         android:textStyle="bold"
+        android:text="Add Change Over Place" />
+
+   <Button
+       android:id="@+id/showChangeOverTable"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@+id/addChangeOver"
+       android:layout_below="@+id/addChangeOver"
+       android:onClick="showCTable"
+        android:textStyle="bold"
+       android:text="ChangeOvers" />
+
+   <Button
+       android:id="@+id/showPlaceTable"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/addChangeOver"
+       android:layout_below="@+id/addChangeOver"
+       android:onClick="showPTable"
+        android:textStyle="bold"
+       android:text="Places" />
+
+</RelativeLayout>

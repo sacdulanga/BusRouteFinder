@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.busroutefinder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="com.example.busroutefinder.permission.MAPS_RECEIVE" />
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+     <permission
+      android:name="com.example.busroutefinder.permission.MAPS_RECEIVE"
+      android:protectionLevel="signature" />
+     
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+   <uses-feature
+      android:glEsVersion="0x00020000"
+      android:required="true" />
+   
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.busroutefinder.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            
+        </activity>
+        
+        <uses-library android:required="true" android:name="com.google.android.maps" />
+<meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+<meta-data
+   android:name="com.google.android.maps.v2.API_KEY"
+   android:value="AIzaSyAR25tg8Pz1dnVTvoCR4WvqolvPcSHL8eg" />
+<meta-data 
+            android:name="com.google.android.gms.version" 
+            android:value="@integer/google_play_services_version" />
+        
+        <activity android:name="com.example.busroutefinder.BusRoute"></activity>
+        <activity android:name="com.example.busroutefinder.JavaConnect"></activity>
+        <activity android:name="com.example.busroutefinder.BusRouteAdapter"></activity>
+        <activity android:name="com.example.busroutefinder.Place_to_Place_Activity"></activity>
+        <activity android:name="com.example.busroutefinder.AddDataActivity"></activity>
+        <activity android:name="com.example.busroutefinder.SetLocationActivity"></activity>
+        <activity android:name="com.example.busroutefinder.RouteFinder"></activity>
+         <activity android:name="com.example.busroutefinder.MovePoint"></activity>
+          <activity android:name="com.example.busroutefinder.Notificationbuilder"></activity>  
+          <service android:name="com.example.busroutefinder.MovePoint"></service>
+          <service android:name="com.example.busroutefinder.SetLocationActivity"></service>
+           <activity android:name="com.example.busroutefinder.RouteNumberSearch"></activity>
+            <activity android:name="com.example.busroutefinder.Add_placeActivity"></activity>
+             <activity android:name="com.example.busroutefinder.Add_routeActivity"></activity>
+      
+    </application>
+
+</manifest>

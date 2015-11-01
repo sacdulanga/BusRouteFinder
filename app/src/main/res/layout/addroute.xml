@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_02" 
+    >
+
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="Route" />
+
+
+    <EditText
+        android:id="@+id/routeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/route"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/routeValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="Start" />
+
+    <EditText
+        android:id="@+id/startValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/end"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/startValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="End" />
+    
+     <EditText
+         android:id="@+id/endValue"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:layout_below="@+id/end"
+         android:inputType="text" />
+
+
+    
+      <TextView
+        android:id="@+id/holts"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/endValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         android:textStyle="bold"
+        android:text="Holts" />
+
+    <EditText
+        android:id="@+id/holtsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/holts"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text" />
+
+   <Button
+        android:id="@+id/addRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignRight="@+id/holtsValue"
+        android:layout_below="@+id/holtsValue"
+		android:layout_alignLeft="@+id/holtsValue"
+		 android:textStyle="bold"
+        android:onClick="addRoute"
+        android:text="Add Route" />
+
+   <Button
+       android:id="@+id/showChangeOverTable"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/addRoute"
+       android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+       android:onClick="showRouteTable"
+       android:text="Routes" />
+
+</RelativeLayout>

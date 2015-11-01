@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Bus Route Finder\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="F:\Bus Route Finder\app\build\intermediates\pre-dexed\debug\classes-582bdb738fc4092f71322dc5525fef8806518b4b.jar" />
+    </item>
+    <item
+        jar="F:\Old\adt-bundle-windows-x86_64-20140321\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="F:\Bus Route Finder\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-992de6d53ea64257be099cbba7267e0c17055293.jar" />
+    </item>
+    <item
+        jar="F:\Bus Route Finder\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="F:\Bus Route Finder\app\build\intermediates\pre-dexed\debug\classes-e9382423f9d2605e49bb71b030991df2eba4efbe.jar" />
+    </item>
+    <item
+        jar="F:\Bus Route Finder\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="F:\Bus Route Finder\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-f852440cda81389973834d8e297b0da8ee631d6f.jar" />
+    </item>
+    <item
+        jar="F:\Bus Route Finder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="F:\Bus Route Finder\app\build\intermediates\pre-dexed\debug\classes-e2ec728663a2c1eaae6be38450e1f7accf0f4126.jar" />
+    </item>
+
+</items>
